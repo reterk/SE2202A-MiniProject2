@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Course Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Western University Course Explorer</h1>
+    </header>
+
+    <!-- Load Courses Section -->
+    <section id="load-section">
+        <h2>Load Courses (JSON)</h2>
+        <input type="file" id="fileInput" accept=".json">
+        <p id="loadError" class="error"></p>
+    </section>
+
+    <!-- Sort and Filter Section -->
+    <section id="filter-section">
+        <h2>Sort and Filter</h2>
+
+        <div class="filter-row">
+            <label>Department:
+                <select id="filter-department">
+                    <option value="">All</option>
+                </select>
+            </label>
+
+            <label>Level:
+                <select id="filter-level">
+                    <option value="">All</option>
+                </select>
+            </label>
+
+            <label>Credits:
+                <select id="filter-credits">
+                    <option value="">All</option>
+                </select>
+            </label>
+
+            <label>Instructor:
+                <select id="filter-instructor">
+                    <option value="">All</option>
+                </select>
+            </label>
+
+            <label>Sort By:
+                <select id="sort-select">
+                    <option value="">None</option>
+                    <option value="title-asc">Title (A–Z)</option>
+                    <option value="title-desc">Title (Z–A)</option>
+                    <option value="id-asc">ID ↑</option>
+                    <option value="id-desc">ID ↓</option>
+                    <option value="date-asc">Semester (Oldest first)</option>
+                    <option value="date-desc">Semester (Newest first)</option>
+                </select>
+            </label>
+        </div>
+    </section>
+
+    <!-- Course list + details side view section -->
+    <main id="content-container">
+        <div id="course-list-container">
+            <ul id="courseList"></ul>
+        </div>
+
+        <div id="details-section">
+            <div id="detailsBox">
+                <p>Select a course to view details.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

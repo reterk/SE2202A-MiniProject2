@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background: #4f2683;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+#load-section h2,
+#filter-section h2 {
+    margin-top: 0;
+    font-size: 25px;
+    color: #333;
+}
+
+.filter-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.filter-row label {
+    font-size: 14px;
+}
+
+.filter-row select {
+    margin-left: 6px;
+    padding: 4px;
+}
+
+#content-container {
+    display: flex;
+    height: 50vh;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+#course-list-container {
+    width: 35%;
+    background: white;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#courseList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#courseList li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f5f5f5;
+    border: 3px solid #201436;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#courseList li:hover {
+    background: #bababaaa;
+}
+
+#details-section {
+    flex-grow: 1;
+    background: white;
+    border: 3px solid #201436;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#detailsBox h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.error {
+    color: red;
+    margin-top: 8px;
+}
